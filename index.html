@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie</title>
+
+  <!-- FONT GOOGLE -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- BS4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <header class="container">
+    <div class="text-white text-right mb-0 phone">
+      <i class="fas fa-phone-alt"></i>
+      <span class="mx-3 border-right pr-3">056 123 5556</span>
+      <i class="fa fa-search"></i>
+    </div>
+    <!-- <p class="container-fluid bg-dark text-white text-right">
+            <i class="fas fa-phone-alt"></i>
+            <span>056123556</span>
+            <i class="fa fa-search"></i>
+        </p> -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.svg" alt="" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="movieNavBar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WHAT'S ON</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SHORTCODES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <section class="movieCarousel">
+    <div id="carouselMovie" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="container carousel-indicators pb-5">
+        <li data-target="#carouselMovie" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselMovie" data-slide-to="1"></li>
+        <li data-target="#carouselMovie" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner blurb">
+        <div class="carousel-item active">
+          <img src="./img/hero-1.jpg" class="d-block w-100 img-fluid center-block" alt="...">
+          <div class="carousel-item__overlay"></div>
+          <div class="container carousel-caption">
+            <span class="genre blurb">ACTION, ADVENTURE, FANTASY</span>
+            <h2 class="title heading">End of the World: Part I</h2>
+            <p class="blurb">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+              Mirum est notare
+              quam littera gothica, quam nunc putamus parum.</p>
+            <div class="carousel-item__trailer buttons">
+              <span class="tag d-inline-block text-white rounded-circle text-center mr-2">PG</span>
+              <button class="btn-orange border-0">
+                <i class="fa fa-play mr-1 text-white"></i>
+                <span>PLAY TRAILER</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="./img/hero-2.jpg" class="d-block w-100 img-fluid center-block" alt="...">
+          <div class="carousel-item__overlay"></div>
+          <div class="container carousel-caption">
+            <span class="genre blurb">ACTION, ADVENTURE, FANTASY</span>
+            <h2 class="title heading">End of the World: Part I</h2>
+            <p class="blurb">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+              Mirum est notare
+              quam littera gothica, quam nunc putamus parum.</p>
+            <div class="carousel-item__trailer buttons">
+              <span class="tag d-inline-block text-white rounded-circle text-center mr-2">PG</span>
+              <button class="btn-orange border-0">
+                <i class="fa fa-play mr-1 text-white"></i>
+                <span>PLAY TRAILER</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="./img/hero-3.jpg" class="d-block w-100 img-fluid center-block" alt="...">
+          <div class="carousel-item__overlay"></div>
+          <div class="container carousel-caption">
+            <span class="genre blurb">ACTION, ADVENTURE, FANTASY</span>
+            <h2 class="title heading">End of the World: Part I</h2>
+            <p class="blurb">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+              Mirum est notare
+              quam littera gothica, quam nunc putamus parum.</p>
+            <div class="carousel-item__trailer buttons">
+              <span class="tag d-inline-block text-white rounded-circle text-center mr-2">PG</span>
+              <button class="btn-orange border-0">
+                <i class="fa fa-play mr-1 text-white"></i>
+                <span>PLAY TRAILER</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newIn">
+    <div class="container">
+      <h2>new in</h2>
+      <div class="newIn__content">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="newIn__img">
+              <img class="img-fluid w-100" src="./img/movie-1.jpg" alt="">
+              <div class=newIn__overlay></div>
+              <div class="newIn__play w-100 text-white text-center">
+                <i class="fa fa-play d-block mx-auto mb-3"></i>
+                <a href="#" class="d-block mb-2 ">read more</a>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="newIn__movie text-center">
+              <p class="my-3">The last post</p>
+              <div>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star" style="color: #d8d8d8;"></i>
+                <i class="fa fa-star movie__star" style="color: #d8d8d8;"></i>
+                <i class="fa fa-star movie__star" style="color: #d8d8d8;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="newIn__img">
+              <img class="img-fluid w-100" src="./img/movie-2.jpg" alt="">
+              <div class=newIn__overlay></div>
+              <div class="newIn__play w-100 text-white text-center">
+                <i class="fa fa-play d-block mx-auto mb-3"></i>
+                <a href="#" class="d-block mb-2 ">read more</a>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="newIn__movie text-center">
+              <p class="my-3">Dark and lonely</p>
+              <div>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star" style="color: #d8d8d8;"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="newIn__img">
+              <img class="img-fluid w-100" src="./img/movie-3.jpg" alt="">
+              <div class=newIn__overlay></div>
+              <div class="newIn__play w-100 text-white text-center">
+                <i class="fa fa-play d-block mx-auto mb-3"></i>
+                <a href="#" class="d-block mb-2 ">read more</a>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="newIn__movie text-center">
+              <p class="my-3">Venture</p>
+              <div>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="newIn__img">
+              <img class="img-fluid w-100" src="./img/movie-4.jpg" alt="">
+              <div class=newIn__overlay></div>
+              <div class="newIn__play w-100 text-white text-center">
+                <i class="fa fa-play d-block mx-auto mb-3"></i>
+                <a href="#" class="d-block mb-2 ">read more</a>
+                <p>Lorem, ipsum dolor.</p>
+              </div>
+            </div>
+            <div class="newIn__movie text-center">
+              <p class="my-3">Hush</p>
+              <div>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star"></i>
+                <i class="fa fa-star movie__star" style="color: #d8d8d8;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="showTimes">
+    <div class="container">
+      <div class="row">
+        <div class="tabs col-sm-12">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#mon" role="tab">Mon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#teu" role="tab">Teu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link show active" data-toggle="tab" href="#wed" role="tab" id="home">Today</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#thu" role="tab">Thu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#fri" role="tab">Fri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#sat" role="tab">Sat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#sun" role="tab">Sun</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- thu 2 -->
+            <div class="tab-pane fade" id="mon" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-9.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- thu 3 -->
+            <div class="tab-pane fade" id="teu" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-5.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- thu 4 -->
+            <div class="tab-pane fade show active" id="wed" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-11.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- thu 5 -->
+            <div class="tab-pane fade" id="thu" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-12.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- thu 6 -->
+            <div class="tab-pane fade" id="fri" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-13.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- thu 7 -->
+            <div class="tab-pane fade" id="sat" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-8.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CN -->
+            <div class="tab-pane fade" id="sun" role="tabpanel">
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-12 container">
+                  <img src="./img/movie-2.jpg" alt="" class="center-block img-fluid">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-12">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9 col-12">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-12 col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-2.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-4.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container showTimes-tabs row">
+                <a href="#" class="showTimes-tn col-md-3 col-sm-3">
+                  <img src="./img/movie-3.jpg" alt="">
+                </a>
+                <div class="showTimes-detail col-md-9 col-sm-9">
+                  <div class="genre">ACTION, ADVENTURE, FANTASY</div>
+                  <div class="title">Captain America: The First Avenger</div>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, reiciendis! Nam vitae cupiditate vero
+                    ea enim. Magnam nulla natus ratione.</p>
+                  <a href="#" class="synopsis">
+                    Full synopsis
+                    <i class="fa fa-angle-right"></i>
+                  </a>
+                  <div class="viewTimes">
+                    <div class="row">
+                      <div class="col-md-9 col-sm-9">
+                        <hr class="space-10" />
+                        <span class="viewing-times">
+                          <i class="fa fa-clock"></i>
+                          Viewing times
+                        </span>
+                        <span class="time past">11:00</span>
+                        <span class="time past">14:30</span>
+                        <span class="time">20:00</span>
+                        <span class="time">21:15</span>
+                      </div>
+                      <div class="col-md-3 col-sm-3 running-time text-right">
+                        <hr class="space-10" />
+                        117 mins <span class="certificate">PG</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="comingSoon">
+    <div class="coming__bg">
+      <div class="container">
+        <h1>COMING SOON</h1>
+        <div class="row">
+          <div class="col-sm-5 col-xs-12 d-flex align-items-center">
+            <div class="coming__detail text-white">
+              <span class="genre">ADVENTURE, DRAMA, SCI-FI</span>
+              <h2 class="display-5">Locked out</h2>
+              <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="coming__date">
+                  <i class="fa fa-calendar"></i>
+                  15 April, 2018
+                </span>
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odit alias cum aliquam reiciendis
+                asperiores perferendis minima a praesentium perspiciatis.</p>
+              <a href="#">More info <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 col-sm-push-1">
+            <div class="coming__trailer">
+              <img src="./img/slide-3-video.png" alt="" class="img-fluid">
+              <i class="fa fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="coming__list">
+      <div class="container text-white text-align-center">
+        <div class="row">
+          <div class="col-lg-2 col-6 col-sm-4  coming-item">
+            <a href="#">
+              <img src="./img/movie-8.jpg" alt="" class="img-fluid">
+            </a>
+            <h5 class="title">Locked out</h5>
+            <p style="text-align: center; font-size: 14px;">01 december 2018</p>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-4  coming-item">
+            <a href="#">
+              <img src="./img/movie-9.jpg" alt="" class="img-fluid">
+            </a>
+            <h5 class="title">Too fast</h5>
+            <p style="text-align: center; font-size: 14px;">15 April 2018</p>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-4  coming-item">
+            <a href="#">
+              <img src="./img/movie-11.jpg" alt="" class="img-fluid">
+            </a>
+            <h5 class="title">Locked out</h5>
+            <p style="text-align: center; font-size: 14px;">01 december 2018</p>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-4  coming-item">
+            <a href="#">
+              <img src="./img/movie-12.jpg" alt="" class="img-fluid">
+            </a>
+            <h5 class="title">Locked out</h5>
+            <p style="text-align: center; font-size: 14px;">01 december 2018</p>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-4 coming-item">
+            <a href="#">
+              <img src="./img/movie-13.jpg" alt="" class="img-fluid">
+            </a>
+            <h5 class="title">Locked out</h5>
+            <p style="text-align: center; font-size: 14px;">01 december 2018</p>
+          </div>
+          <div class="col-lg-2 col-6 col-sm-4  coming-item">
+            <a href="#">
+              <img src="./img/movie-14.jpg" alt="" class="img-fluid">
+            </a>
+            <h5 class="title">Locked out</h5>
+            <p style="text-align: center; font-size: 14px;">01 december 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="row d-flex text-align-center">
+        <div class="col-sm-12 cta">
+          <p>Need help? Contact our support team on</p>
+          <p class="gradient-text">0330 123 4567</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h6>Get in touch</h6>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Give us feedback</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>About Movie star</h6>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Find us</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>Legal stuff</h6>
+          <ul>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h6>Connect with us</h6>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-google-plus-g"></i></i> Google +</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>2017 &copy; Movie Star / <a href="https://www.klevermedia.co.uk">Web design by Klever media</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Thư viện hỗ trợ -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <!-- BS4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  <!-- venobox -->
+  <script src="./js/venobox.min.js"></script>
+</body>
+
+</html>
